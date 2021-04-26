@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.cycle.lite.js"></script>
+
+    <title>Мини блог</title>
+</head>
+
+<body class="thistleBackground">
+    <main class="blog">
+        <div class="whiteBackground">
+            <div class="slider">
+                <input type="radio" name="photos" id="p1" checked>
+                <input type="radio" name="photos" id="p2">
+                <input type="radio" name="photos" id="p3">
+                <input type="radio" name="photos" id="p4">
+
+                <div id="one" class="divPhoto">
+                    <img src="Photo/photo1.jpg" class="photo" alt="Горы">
+                </div>
+                <div id="two" class="divPhoto">
+                    <img src="Photo/photo2.jpg" class="photo" alt="Океан">
+                </div>
+                <div id="three" class="divPhoto">
+                    <img src="Photo/photo3.jpg" class="photo" alt="Лазурная река">
+                </div>
+                <div id="four" class="divPhoto">
+                    <img src="Photo/photo4.jpg" class="photo" alt="Город">
+                </div>
+                <div class="nav">
+                    <label for="p1" id="dot1" class="dots"></label>
+                    <label for="p2" id="dot2" class="dots"></label>
+                    <label for="p3" id="dot3" class="dots"></label>
+                    <label for="p4" id="dot4" class="dots"></label>
+                </div>
+
+            </div>
+            <div class="information">
+                <p>Иванов Иван, Сидоров Степан, Ефремова Анна </p>
+                <p>Путешествия завораживают, здесь я делюсь своими впечателниями и эмоциями о поездках.</p>
+                <input id="read" type="button" value="Читать" class="buttonRead">
+            </div>
+            <!--<div>
+                <a id="left" class="previous arrowsStyle">&#10094;</a> Стрелочки для переключения
+                <a id="right" class="next arrowsStyle">&#10095;</a>
+            </div>-->
+            <div class="close">
+                <input id="close" type="button" value="Закрыть" class="buttonClose">
+            </div>
+
+        </div>
+        <div id="slider2" class="whiteBackground">
+            <input type="radio" name="photos2" id="p5" checked>
+            <input type="radio" name="photos2" id="p6">
+            <input type="radio" name="photos2" id="p7">
+
+            <div id="five" class="divPhoto">
+                <img src="Photo/photo4.jpg" class="photo">
+                <label for="p7" class="previous"></label>
+                <label for="p6" class="next"></label>
+            </div>
+            <div id="six" class="divPhoto">
+                <img src="Photo/photo3.jpg" class="photo">
+                <label for="p5" class="previous"></label>
+                <label for="p7" class="next"></label>
+            </div>
+            <div id="seven" class="divPhoto">
+                <img src="Photo/photo2.jpg" class="photo">
+                <label for="p6" class="previous"></label>
+                <label for="p5" class="next"></label>
+            </div>
+            <div class="nav2">
+                <label for="p5" id="dot5" class="dots2"></label>
+                <label for="p6" id="dot6" class="dots2"></label>
+                <label for="p7" id="dot7" class="dots2"></label>
+            </div>
+
+        </div>
+        <div class="whiteBackground slider3">
+            <img id="eight" src="Photo/photo4.jpg" class="photo1 divPhoto">
+            <img id="nine" src="Photo/photo3.jpg" class="photo1 divPhoto">
+            <img id="ten" src="Photo/photo2.jpg" class="photo1 divPhoto">
+        </div>
+        <div class="whiteBackground slider4">
+            <div class="item">
+                <img src="Photo/photo4.jpg" class="photo1 divPos">
+            </div>
+            <div class="item">
+                <img src="Photo/photo3.jpg" class="photo1 divPos">
+            </div>
+            <div class="item">
+                <img src="Photo/photo2.jpg" class="photo1 divPos">
+            </div>
+            <div class="item">
+                <img src="Photo/photo1.jpg" class="photo1 divPos">
+            </div>
+
+
+            <a id="left" class="arrowsStyle" onclick="previousPhoto()">&#10094;</a>
+            <a id="right" class="arrowsStyle" onclick="nextPhoto()">&#10095;</a>
+        </div>
+    </main>
+    <script src="slider3.js"></script>
+    <script src="slider4.js"></script>
+</body>
+
+</html>
